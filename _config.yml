@@ -12,8 +12,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
+url: http://www.edgarhao.cn/blog
+root: /blog
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -74,7 +74,6 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 # theme: landscape
 theme: yilia
-theme: minimal
 # theme: yelee
 
 # Deployment
