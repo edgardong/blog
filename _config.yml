@@ -3,23 +3,24 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: XiaoHaozi's Blog
+subtitle: 
 description:
-author: John Doe
-language:
+author: Edgar Dong
+language: zh-Hanx
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.edgarhao.cn/blog
-root: /blog
+url: http://blog.edgarhao.cn
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
 source_dir: source
 public_dir: public
+# public_dir: blog
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
@@ -82,3 +83,28 @@ deploy:
   type: git
   repo: git@github.com:edgardong/blog.git
   branch: master
+
+jsonContent:
+meta: false
+pages: false
+posts:
+  title: true
+  date: true
+  path: true
+  text: false
+  raw: false
+  content: false
+  slug: false
+  updated: false
+  comments: false
+  link: false
+  permalink: false
+  excerpt: false
+  categories: false
+  tags: true
+
+# my New Port Of Hexo Server
+server:
+  port: 5000
+  compress: true
+  header: true
