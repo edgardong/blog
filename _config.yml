@@ -75,8 +75,8 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 # theme: landscape
 # theme: next
-theme: melody
-# theme: yilia
+# theme: melody
+theme: yilia
 # theme: yelee
 
 # Deployment

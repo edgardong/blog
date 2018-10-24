@@ -113,7 +113,7 @@ cdn:
 
 # Post info settings
 # ---------------
-avatar: 
+avatar: /img/avatar2.jpg
 
 top_img: true # false or url of img 
 
