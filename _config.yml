@@ -83,7 +83,7 @@ theme: yilia
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:edgardong/blog-source.git
+  repo: https://github.com/edgardong/blog.git
   branch: master
 
 jsonContent:
