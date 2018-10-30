@@ -3,21 +3,23 @@
 menu:
   主页: /
   随笔: /tags/随笔/
+  分类: /categories
+  关于: /about
 
 # SubNav
 subnav:
   github: "https://github.com/edgardong/"
-  weibo: "#"
-  rss: "#"
-  zhihu: "#"
-  #qq: "#"
-  #weixin: "#"
-  #jianshu: "#"
+  weibo: "https://weibo.com/u/5645491134"
+  rss: "https://blog.csdn.net/u013460269"
+  zhihu: "https://www.zhihu.com/people/edgardong/activities"
+  # qq: "2535615874"
+  # weixin: "D2535615874"
+  jianshu: "https://www.jianshu.com/u/3bfc5771a3e6"
   #douban: "#"
-  #segmentfault: "#"
+  segmentfault: "https://segmentfault.com/u/edgardong_590ae3c319513"
   #bilibili: "#"
   #acfun: "#"
-  #mail: "mailto:litten225@qq.com"
+  mail: "mailto:2535615874@qq.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
