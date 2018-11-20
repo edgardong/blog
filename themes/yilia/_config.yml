@@ -3,23 +3,25 @@
 menu:
   主页: /
   随笔: /tags/随笔/
-  分类: /categories
   关于: /about
+  # 404: /404
+  分类: /categories
+  日记: /daily-record
 
 # SubNav
 subnav:
-  github: "https://github.com/edgardong/"
-  weibo: "https://weibo.com/u/5645491134"
-  rss: "https://blog.csdn.net/u013460269"
+  github: "https://github.com/edgardong/blog"
+  weibo: "http://weibo.com/5645491134/profile?topnav=1&wvr=6"
+  # rss: "#"
   zhihu: "https://www.zhihu.com/people/edgardong/activities"
-  # qq: "2535615874"
-  # weixin: "D2535615874"
-  jianshu: "https://www.jianshu.com/u/3bfc5771a3e6"
+  #qq: "#"
+  #weixin: "#"
+  jianshu: "http://www.jianshu.com/users/3bfc5771a3e6/timeline"
   #douban: "#"
-  segmentfault: "https://segmentfault.com/u/edgardong_590ae3c319513"
+  # segmentfault: "https://segmentfault.com/u/edgardong_590ae3c319513"
   #bilibili: "#"
   #acfun: "#"
-  mail: "mailto:2535615874@qq.com"
+  mail: "mailto:edgardong@edgarhao.cn"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -30,7 +32,7 @@ rss: /atom.xml
 # 是否需要修改 root 路径
 # 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
 # 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
-root: /
+root: 
 
 # Content
 
@@ -93,11 +95,11 @@ changyan_conf: false
 disqus: false
 
 #5、Gitment
-gitment_owner: edgardong      #你的 GitHub ID
-gitment_repo: 'blog'          #存储评论的 repo
+gitment_owner: false      #你的 GitHub ID
+gitment_repo: ''          #存储评论的 repo
 gitment_oauth:
-  client_id: '5c7fe8adbd9a62019af3'           #client ID
-  client_secret: '311753ce5f4952720ca18218462f972720f1e9fb'       #client secret
+  client_id: ''           #client ID
+  client_secret: ''       #client secret
 
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
@@ -122,11 +124,11 @@ smart_menu:
   aboutme: '关于我'
 
 friends:
-  想翻墙出去?: https://github.com/bannedbook/fanqiang/wiki
-  lscho: https://github.com/lscho/ThinkJS-Vue.js-blog
-  lscho1: https://lscho.com/
-  JerryQu 的小站: https://imququ.com/
+  edhkj: http://www.edgarhao.cn/
+  友情链接2: http://localhost:4000/
+  友情链接3: http://localhost:4000/
+  友情链接4: http://localhost:4000/
   友情链接5: http://localhost:4000/
   友情链接6: http://localhost:4000/
 
-aboutme: 很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
+aboutme: 关于我自己的，正在准备中。。。
