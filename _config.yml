@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: XiaoHaozi's Blog
+title: 破冰博客
 subtitle: 
 description:
 author: Edgar Dong
-language: zh-Hanx
+language: zh-CN
 timezone:
 
 # URL
@@ -76,7 +76,7 @@ pagination_dir: page
 # theme: landscape
 # theme: next
 # theme: melody
-theme: yilia
+theme: icebreaking
 # theme: yelee
 
 # Deployment

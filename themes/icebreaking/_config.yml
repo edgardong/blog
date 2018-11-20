@@ -1,0 +1,8 @@
+# 站点的标题
+title: '破冰博客'
+
+# 主题的菜单配置
+menu:
+  Home: /
+  Archives: /archives
+  DHBlog: http://blog.edgarhao.cn
