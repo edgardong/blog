@@ -4,12 +4,49 @@ body {
   line-height: 1.5;
 }
 
-.container {
+.theme-color {
+  color:#28d0e9;
+}
+
+.container { 
   max-width: 960px;
   margin: 0 auto;
+}
+
+.article-wrapper {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right 0;
+  // bottom 100px
+  margin-bottom 102px
+  max-width: 960px;
+  margin: 0 auto;
+  overflow hidden;
+}
+
+.main {
+  height 100%
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.ick-footer {
+  font-family: "PingFang SC", '微软雅黑', Arial, sans-serif;
+  // position fixed
+  bottom  0
+  left 0
+  right 0
+  height 100px;
+  font-size 14px
+  text-align center
+  display flex
+  align-items center
+  justify-content center
 }
 
 @import "_partial/header";
 @import "_partial/post";
 @import "_partial/archive";
 @import "_partial/paginator";
+@import "_partial/rocketToTop";

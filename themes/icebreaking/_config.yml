@@ -6,3 +6,23 @@ menu:
   Home: /
   Archives: /archives
   DHBlog: http://blog.edgarhao.cn
+  test: {
+    title:  '测试',
+    url:  'http://blog.edgarhao.cn',
+    name: '测试菜单',
+    children: [
+      {
+        title:  '测试11',
+        url:  'http://blog.edgarhao.cn',
+        name: '测试菜单11'
+      },
+       {
+        title:  '测试12',
+        url:  'http://blog.edgarhao.cn',
+        name: '测试菜单12'
+      }
+    ]
+  }
+
+# 博客开始时间
+since: 2015

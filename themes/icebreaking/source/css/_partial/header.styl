@@ -1,7 +1,12 @@
 .header {
   position: fixed;
   top: 0;
-  margin-top: 2em;
+  // margin-top: 1em;
+  background-color: #F2F2F2;
+  width 100%
+  max-width: 960px;
+  margin: 0 auto;
+  z-index 9999
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -22,13 +27,60 @@
       margin-right: 10px;
     }
 
+    .ick-menu__mutiple {
+      position: relative;
+      display: inline-block;
+    }
+
+    .ick-menu__mutiple  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      margin-top 18px;
+      white-space:nowrap;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 12px 16px;
+      &::before {
+        content: ''
+        position absolute
+        top -15px
+        left 30px
+        width 0
+        height 0
+        border  16px solid rgba(25,172,247,0.2)
+        border-width  0 16px 16px 16px
+        border-color:  transparent transparent #19acf7 transparent
+        // transform rotate(45deg)
+      }
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .menu-font {
+      color: #AAA;
+      text-decoration: none;
+      &:hover {
+        color: #368CCB;
+      }
+    }
+
     .menu-item-link {
       color: #AAA;
       text-decoration: none;
-
+      display block
       &:hover {
         color: #368CCB;
       }
     }
   }
+}
+
+.ick-rocket__top {
+  position fixed
+  right 50px
+  bottom 50px
+  font-size 40px !important
+  color #28d0e9
+  cursor pointer
 }

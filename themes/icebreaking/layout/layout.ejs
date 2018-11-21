@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <%- partial('_partial/head') %>
-  <body>
-    <div class="container">
-      <%- partial('_partial/header') %>
+<%- partial('_partial/head') %>
+
+<body>
+  <div class="container">
+    <%- partial('_partial/header') %>
+    <div class="article-wrapper">
       <main class="main">
         <%- body %>
       </main>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
