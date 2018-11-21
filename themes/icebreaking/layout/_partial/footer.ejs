@@ -4,8 +4,8 @@
       <div class="footer-left">
         <i class="fa fa-copyright"></i>
         <span>©</span>
-        <% if (theme.since && !isNaN(theme.since) && theme.since < date(new Date(), 'YYYY')) { %>
-        <%- theme.since%>-
+        <% if (theme.since && !isNaN(theme.since) && new Date(theme.since) < new Date()) { %>
+        <%- date(new Date(theme.since), 'YYYY')%>-
         <% } %>
         <%= date(new Date(), 'YYYY') %>
         <%= config.title %>

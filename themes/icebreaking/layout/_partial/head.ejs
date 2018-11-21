@@ -2,6 +2,16 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   <title><%= config.title %></title>
+  <% if (page.keywords){ %>
+  <meta name="keywords" content="<%= page.keywords %>,<%= config.keywords %>">
+  <% } else if (config.keywords){ %>
+  <meta name="keywords" content="<%= config.keywords %>">
+  <% } %>
+  <% if (page.description){ %>
+  <meta name="description" content="<%= page.description %>,<%= config.description %>">
+  <% } else if (config.description){ %>
+  <meta name="description" content="<%= config.description %>">
+  <% } %>
   <!-- 引入自定义样式 -->
   <%- css('css/style.css') %>
   <!-- 引入字体样式 -->

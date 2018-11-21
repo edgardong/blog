@@ -4,11 +4,12 @@
 
 # Site
 title: 破冰博客
-subtitle: 
-description:
+subtitle:
 author: Edgar Dong
 language: zh-CN
 timezone:
+description: 破冰网-破冰博客
+keywords: 破冰博客  博客  破冰网  icebreaking
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'

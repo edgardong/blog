@@ -1,6 +1,12 @@
 # 站点的标题
 title: '破冰博客'
 
+# keywords
+keywords: 破冰博客  博客  破冰网  icebreaking
+
+# description
+description:  破冰网-破冰博客
+
 # 主题的菜单配置
 menu:
   Home: /
@@ -25,4 +31,4 @@ menu:
   }
 
 # 博客开始时间
-since: 2015
+since: 2015-03-11
