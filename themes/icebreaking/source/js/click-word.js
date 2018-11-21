@@ -1,10 +1,15 @@
 //单击显示随机文字
 var a_idx = 0;
+
+function GetRandomNum(Min, Max) {
+  var Range = Max - Min;
+  var Rand = Math.random();
+  return (Min + Math.round(Rand * Range));
+}
 $(document).ready(function ($) {
 
   $("body").click(function (e) {
 
-    // console.log(e.target.parentNode.id)
     // 火箭部分不出现字体
     if (e.target.parentNode.id == 'rocket-to-top' || e.target.id == 'ick-rocket__top' || e.target.parentNode.id == 'ick-rocket__top') {
       return;
@@ -33,8 +38,11 @@ $(document).ready(function ($) {
       "却 在孤单寒夜出现",
       "又 点燃了梦想火焰🔥在心间",
       "帅有个屁用！到头来还不是被卒吃掉！");
+
+    a_idx = GetRandomNum(0, a.length - 1)
+
     var $i = $("<span/>").text(a[a_idx]);
-    a_idx = (a_idx + 1) % a.length;
+    // a_idx = (a_idx + 1) % a.length;
     var x = e.pageX,
       y = e.pageY;
     $i.css({
