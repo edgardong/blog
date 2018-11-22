@@ -9,12 +9,24 @@
       <main class="main">
         <%- body %>
       </main>
+      <div class="slider-right">
+        <!-- 博客简介部分 -->
+        <div class="ick-blog__desc ick-card">
+          <span class="label">博客简介</span>
+          <p>破冰博客：ICEBREAKING.COM，是一个专注于技术类型的博客，坚持更多更好的原创作品，希望能够对您有所帮助。<span class="ick-blue">了解更多...</span></p>
+        </div>
+
+        <!-- 博客统计部分 -->
+        <div class="ick-blog__statistics ick-card">
+          <span>总文章数：<%= site.posts.length %></span>
+          <span>总分类数：<%= site.categories.length %></span>
+          <span>总标签数：<%= site.tags.length %></span>
+        </div>
+      </div>
     </div>
   </div>
-  <!-- 网站统计，总文章数、总分类数、总标签数 -->
-  <!-- <%= site.posts.length %> <br>
-  <%= site.categories.length %>  <br>
-  <%= site.tags.length %>  <br> -->
+
+  <%- partial('_partial/onlinechat') %>
 </body>
 
 </html>

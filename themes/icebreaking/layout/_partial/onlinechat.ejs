@@ -1,0 +1,36 @@
+<% if(theme.onlinechat.enable) { %>
+<div class="ick-onlinechat" id="ickonlinechat">
+  <img src="../images/open_im.png" class="ick-onlinechat__img" />
+  <div class="ick-onlinechat__content">
+    <span class="title bigsize">服务热线：</span>
+    <span class="phone bigsize">186****9311</span>
+    <span class="qq-title bigsize">QQ咨询</span>
+    <a class="chat-img" href="http://wpa.qq.com/msgrd?v=3&uin=2535615874&site=qq&menu=yes"><img src="../images/zaixian_qq.gif"
+        alt=""></a>
+    <a class="chat-img" href="http://wpa.qq.com/msgrd?v=3&uin=2213531643&site=qq&menu=yes"><img src="../images/zaixian_qq.gif"
+        alt=""></a>
+
+    <span class="wangwang-title bigsize">旺旺在线</span>
+    <a class="chat-img" target="_blank" href="http://amos.alicdn.com/getcid.aw?v=2&uid=%E8%91%A3%E6%B5%A9930311&site=cntaobao&s=1&groupid=0&charset=utf-8"><img
+        border="0" src="../images/zaixian_ww.gif"
+        alt="" title="" /></a>
+    <a class="chat-img" target="_blank" href="http://amos.alicdn.com/getcid.aw?v=2&uid=%E8%91%A3%E6%B5%A9930311&site=cntaobao&s=1&groupid=0&charset=utf-8"><img
+        border="0" src="../images/lixian_ww.gif" alt="" title="" /></a>
+  </div>
+</div>
+
+<script>
+  $('#ickonlinechat').hover(
+    function () {
+      $(this).stop(true).animate({
+        right: 0
+      }, 500);
+    },
+    function () {
+      $(this).stop(true).animate({
+        right: '-100px'
+      }, 'slow');
+    }
+  )
+</script>
+<% } %>

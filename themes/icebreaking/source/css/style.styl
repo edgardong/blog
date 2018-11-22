@@ -25,14 +25,13 @@ html::-webkit-scrollbar-thumb
 	background-color: rgba(0,0,0,0.2);
 }
 
-
 .theme-color {
   color:#28d0e9;
 }
 
 .container { 
-  max-width: 960px;
-  margin: 0 auto;
+  // max-width: 960px;
+  margin: 0 100px
 }
 
 .article-wrapper {
@@ -42,15 +41,53 @@ html::-webkit-scrollbar-thumb
   right 0;
   // bottom 100px
   margin-bottom 102px
-  max-width: 960px;
-  margin: 0 auto;
+  // max-width: 960px;
+  margin: 0 100px
   overflow hidden;
 }
 
 .main {
-  height 100%
-  max-width: 960px;
-  margin: 0 auto;
+  width 75%
+  float left
+}
+.slider-right {
+  font-family: "PingFang SC", '微软雅黑', Arial, sans-serif;
+  width 25%
+  // height 100%
+  float right
+  position  relative
+  .ick-card {
+    background: #fff;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 1px 2px #c5c5c5;
+    box-shadow: 0 1px 2px #c5c5c5;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    padding: 0 15px 10px;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+    border-bottom: 0;
+  }
+  .ick-blog__desc {
+    font-size: 14px
+    .label {
+      background-color #368ccb
+      color #ffffff
+      margin: -1px 0 0
+      display: inline-block
+      padding: 4px 15px
+    }
+    .ick-blue {
+      color #368ccb
+      cursor pointer
+    }
+  }
+  .ick-blog__statistics {
+    span {
+      display inline-block
+    }
+  }
 }
 
 .ick-footer {
@@ -72,4 +109,5 @@ html::-webkit-scrollbar-thumb
 @import "_partial/archive";
 @import "_partial/paginator";
 @import "_partial/rocketToTop";
-@import "_partial/_gitment.styl";
+@import "_partial/_gitment";
+@import "_partial/onlinechat";

@@ -13,7 +13,7 @@ keywords: 破冰博客  博客  破冰网  icebreaking
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://blog.edgarhao.cn
+url: https://blog.edgarhao.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

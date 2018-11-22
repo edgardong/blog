@@ -1,6 +1,6 @@
 $(function () {
   var e = $("#rocket-to-top"),
-    ickR = $("ick-rocket__top"),
+    ickR = $("#ick-rocket__top"),
     t = $(document).scrollTop(),
     n,
     r,
