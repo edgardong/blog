@@ -10,6 +10,14 @@ $(document).ready(function ($) {
 
   $("body").click(function (e) {
 
+    // console.log($(e.target).attr('class'))
+    // console.log(e.target)
+    // 不需要显示文字的样式
+    var className = $(e.target).attr('class');
+    if (className && className.indexOf('click-no-word') > -1) {
+      return;
+    }
+
     // 火箭部分不出现字体
     if (e.target.parentNode.id == 'rocket-to-top' || e.target.id == 'ick-rocket__top' || e.target.parentNode.id == 'ick-rocket__top') {
       return;

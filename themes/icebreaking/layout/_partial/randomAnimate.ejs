@@ -1,0 +1,27 @@
+<script>
+  // $('.ick-animate').fadeIn(2000);
+  $('.ick-animate--slidedown').slideDown();
+  $('.ick-animate--fadein').fadeIn(2000);
+  $('.ick-animate--show').show("slow");
+  $('.ick-animate--leftright').show().animate({
+    left: '0'
+  },"slow");
+  $('.ick-animate--rightleft').show().animate({
+    left: '0'
+  },"slow");
+
+  var point = $('.ick-animate--point');
+  point.animate({
+  },1000,function(){
+    $(this).css({'transform': 'scale(1)'})
+  })
+
+  $('.ick-animate--drop').animate({
+    top: '0%'
+  },"10",function() {
+    $(this).css({'transform': 'translateY(0)'})
+  }).delay(2000).animate({
+  },function() {
+    $(this).css({'transform': 'translateY(30%)'})
+  })
+</script>

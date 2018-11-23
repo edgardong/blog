@@ -1,9 +1,33 @@
 .post {
+  position relative
   margin: 1em auto;
-  padding: 30px 50px;
+  padding: 10px 15px;
   background-color: #fff;
   border: 1px solid #ddd;
   box-shadow: 0 0 2px #ddd;
+  // opacity 0
+  display none
+}
+
+.ick-animate--leftright {
+  left 100%
+}
+
+.ick-animate--rightleft {
+  left -100%
+}
+
+.ick-animate--point {
+  display block
+  transform scale(0)
+  transition all 1s ease-in-out
+}
+
+.ick-animate--drop {
+  display block  
+  transform translateY(-100%)
+  transition: transform 0.5s
+  // top -200%
 }
 
 .posts  {

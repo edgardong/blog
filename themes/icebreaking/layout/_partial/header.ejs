@@ -1,45 +1,47 @@
-<header class="header">
-  <div class="blog-title">
-    <a href="<%- url_for() %>" class="logo">
-      <%= config.title %></a>
-  </div>
-  <nav class="navbar">
-    <ul class="menu">
-      <% for (m in theme.menu) { %>
-      <li class="menu-item">
-        <% if (typeof(theme.menu[m])=='object') { %>
-        <!-- 一级菜单 -->
-        <div class="ick-menu__mutiple dropdown">
-          <a class=" menu-item-link">
-            <%= theme.menu[m].name %><i class="icon iconfont icon-moreunfold menu-font"></i></a>
-          <div class="dropdown-content">
-            <% for (c in theme.menu[m].children) { %>
-            <div>
-              <a href="<%- url_for(theme.menu[m].children[c].url) %>" target="_blank" class="menu-item-link">
-                <%= theme.menu[m].children[c].name %></a>
+<div class="header-wrapper">
+  <header class="header">
+    <div class="blog-title">
+      <a href="<%- url_for() %>" class="logo">
+        <%= config.title %></a>
+    </div>
+    <nav class="navbar">
+      <ul class="menu">
+        <% for (m in theme.menu) { %>
+        <li class="menu-item">
+          <% if (typeof(theme.menu[m])=='object') { %>
+          <!-- 一级菜单 -->
+          <div class="ick-menu__mutiple dropdown">
+            <a class=" menu-item-link">
+              <%= theme.menu[m].name %><i class="icon iconfont icon-moreunfold menu-font"></i></a>
+            <div class="dropdown-content">
+              <% for (c in theme.menu[m].children) { %>
+              <div>
+                <a href="<%- url_for(theme.menu[m].children[c].url) %>" target="_blank" class="menu-item-link">
+                  <%= theme.menu[m].children[c].name %></a>
+              </div>
+              <% } %>
             </div>
-            <% } %>
           </div>
-        </div>
-        <% } else { %>
-        <!-- 只有一个标题 -->
-        <a href="<%- url_for(theme.menu[m]) %>" target="_blank" class="menu-item-link">
-          <%- __('Menu.' + m) %></a>
+          <% } else { %>
+          <!-- 只有一个标题 -->
+          <a href="<%- url_for(theme.menu[m]) %>" target="_blank" class="menu-item-link">
+            <%- __('Menu.' + m) %></a>
 
+          <% } %>
+        </li>
         <% } %>
-      </li>
-      <% } %>
-    </ul>
-  </nav>
-</header>
+      </ul>
+    </nav>
+  </header>
+</div>
 
 <!-- 火箭 -->
-<div style="display: none;" id="rocket-to-top">
+<div style="display: none;" id="rocket-to-top" class="click-no-word">
   <div style="opacity:0;display: block;" class="level-2"></div>
   <div class="level-3"></div>
 </div>
 
-<div class="ick-rocket__top">
+<div class="ick-rocket__top click-no-word">
   <i id="ick-rocket__top" onclick="rocketToTop(event)" class="icon iconfont icon-icon-test ick-rocket__top">
   </i>
 </div>
