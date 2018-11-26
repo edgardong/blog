@@ -17,8 +17,8 @@
      * 返回随机的动画名称
      */
     var getRandomAnimate = function (pageIndex) {
-      var animateArr = ["fadein", "slidedown",'show','leftright','rightleft','point','drop'];
-      // animateArr = ['drop'];
+      var animateArr = ["fadein", "slidedown",'show','leftright','rightleft','point','drop','rotate360'];
+      // animateArr = ['rotate360'];
       var index = GetRandomNum(0, animateArr.length - 1);
       // return pageIndex==0? animateArr[index]:'';
       return animateArr[index];
@@ -29,7 +29,11 @@
     //   $('.ick-animate').attr('class', oldClassName + ' ick-animate--' + getRandomAnimate())
     // }
   %>
-  <article class="post ick-animate--<%= getRandomAnimate(index) %> ">
+  <article class="post post-list ick-list__post ick-animate--<%= getRandomAnimate(index) %> ">
+  <div class="article-left">
+    <img src="/images/default.png" />
+  </div>
+  <div class="article-right">
     <div class="post-title">
       <a class="post-title-link" href="<%- url_for(post.path) %>">
         <%= post.title %></a>
@@ -41,6 +45,7 @@
       <span class="post-time">
         <%- date(post.date, "YYYY-MM-DD") %></span>
     </div>
+  </div>
   </article>
   <% }) %>
 </section>
