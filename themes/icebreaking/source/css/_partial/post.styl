@@ -9,6 +9,9 @@
   display none
 }
 
+.post.post-list
+  height 180px
+
 .post-detail {
   display block
   margin 0 auto
@@ -51,6 +54,13 @@
   }
 
   .post-content {
+    position absolute
+    left 0
+    top 46px
+    right 0
+    bottom 38px
+    overflow hidden
+    line-height 1.5
     a {
       color: #368CCB;
       text-decoration: none;
@@ -65,12 +75,17 @@
 /** 文章列表样式 **/
 .ick-list__post {
   display flex
-  align-items center
+  align-items stretch
   .article-left {
     flex 0
   }
   .article-right {
+    position relative
     flex 1
     margin-left 15px
+    padding 15px 0
+    display flex
+    flex-direction column
+    justify-content space-between
   }
 }
