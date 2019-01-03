@@ -13,11 +13,16 @@
   </div>
 </article>
 
+<script>
+  // 设置问章标题
+  document.title = '<%= page.title %>';
+</script>
+
 <% if(theme.gitment.enable) { %>
 <div id="gitment_title" class="gitment_title"></div>
 <div id="container" style="display:none"></div>
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script src="https://www.wenjunjiang.win/js/gitment.js"></script>
 <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
 <script>
   const myTheme = {
@@ -37,7 +42,8 @@
     $("#gitment_title").attr("style", "display:none");
     $("#container").attr("style", "").addClass("gitment_container");
     var gitment = new Gitment({
-      id: decodeURI(window.location.pathname),
+      // id: decodeURI(window.location.pathname),
+      id: '<%= page.title %>',
       theme: myTheme,
       owner: '<%=theme.gitment.github_user%>',
       repo: '<%=theme.gitment.github_repo%>',

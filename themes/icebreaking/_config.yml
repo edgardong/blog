@@ -12,6 +12,7 @@ menu:
   Home: /
   Archives: /archives
   DHBlog: http://blog.edgarhao.cn
+  SiteMap: sitemap.xml
   test: {
     title:  '测试',
     url:  'http://blog.edgarhao.cn',

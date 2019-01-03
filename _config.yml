@@ -111,3 +111,8 @@ server:
   port: 5000
   compress: true
   header: true
+
+# my web sitemap
+sitemap:
+  path: sitemap.xml
+  tempalte: ./sitemap_template.xml
