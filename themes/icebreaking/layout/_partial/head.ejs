@@ -1,0 +1,27 @@
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <title><%= config.title %></title>
+  <meta name="baidu-site-verification" content="oDaFSJ2uF2" />
+  <% if (page.keywords){ %>
+  <meta name="keywords" content="<%= page.keywords %>,<%= config.keywords %>">
+  <% } else if (config.keywords){ %>
+  <meta name="keywords" content="<%= config.keywords %>">
+  <% } %>
+  <% if (page.description){ %>
+  <meta name="description" content="<%= page.description %>,<%= config.description %>">
+  <% } else if (config.description){ %>
+  <meta name="description" content="<%= config.description %>">
+  <% } %>
+  <!-- 引入自定义样式 -->
+  <%- css('css/style.css') %>
+  <!-- 引入字体样式 -->
+  <%- css('fonts/iconfont.css') %>
+  <!-- 引入js文件 -->
+  <%- js('js/jquery-3.3.1.min.js') %>
+  <%- js('js/click-heart.js') %>
+  <%- js('js/click-word.js') %>
+  <%- js('js/rocket-to-top.js') %>
+  <%- js('js/baidu.js') %>
+  <%- js('js/online-chat.js') %>
+</head>

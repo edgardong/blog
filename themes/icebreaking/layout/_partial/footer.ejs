@@ -1,0 +1,21 @@
+<footer id="footer" class="ick-footer">
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">
+        <i class="fa fa-copyright"></i>
+        <span>©</span>
+        <% if (theme.since && !isNaN(theme.since) && new Date(theme.since) < new Date()) { %>
+        <%- date(new Date(theme.since), 'YYYY')%>-
+        <% } %>
+        <%= date(new Date(), 'YYYY') %>
+        <%= config.title %>
+        <span> | <a href="http://hexo.io/"  class="theme-color" target="_blank" title="<%= __('tooltip.Hexo') %>">Hexo</a> 驱动</span>
+      </div>
+      <div class="footer-right">
+        主题 <a href="https://github.com/edgardong/hexo-theme-icebreaking" target="_blank"  class="theme-color" title="破冰团队">IceBreaking</a> 由
+        Edgar Dong <i class="fa fa-heart animated infinite pulse"></i>免费提供 | 
+        <span>鄂ICP备17003441号-1</span>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,67 @@
+# 站点的标题
+title: '破冰博客'
+
+# keywords
+keywords: 破冰博客  博客  破冰网  icebreaking
+
+# description
+description:  破冰网-破冰博客
+
+# 主题的菜单配置
+menu:
+  Home: /
+  Archives: /archives
+  DHBlog: http://blog.edgarhao.cn
+  SiteMap: sitemap.xml
+  test: {
+    title:  '测试',
+    url:  'http://blog.edgarhao.cn',
+    name: '测试菜单',
+    children: [
+      {
+        title:  '测试11',
+        url:  'http://blog.edgarhao.cn',
+        name: '测试菜单11'
+      },
+       {
+        title:  '测试12',
+        url:  'http://blog.edgarhao.cn',
+        name: '测试菜单12'
+      }
+    ]
+  }
+
+# 博客开始时间
+since: 2015-03-11
+
+# Gitment
+# Introduction: https://imsun.net/posts/gitment-introduction/
+gitment:
+  enable: true
+  mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
+  count: true # Show comments count in post meta area
+  lazy: false # Comments lazy loading with a button
+  cleanly: false # Hide 'Powered by ...' on footer, and more
+  language: # Force language, or auto switch by theme
+  github_user: edgardong #git的用户名
+  github_repo: blog  #git仓库的名称
+  client_id: 5c7fe8adbd9a62019af3
+  client_secret: 311753ce5f4952720ca18218462f972720f1e9fb
+  proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
+  redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
+
+# online-chat
+onlinechat:
+  enable: true
+  detail: [{
+    type: QQ,
+    user: [
+      '2535615874',
+      '2213531643'
+    ]
+  },{
+    type: WangWang,
+    user: [
+      '董浩930311'
+    ]
+  }]

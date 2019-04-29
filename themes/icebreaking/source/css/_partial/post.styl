@@ -1,0 +1,91 @@
+.post {
+  position relative
+  margin: 1em auto;
+  padding: 10px 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 2px #ddd;
+  // opacity 0
+  display none
+}
+
+.post.post-list
+  height 180px
+
+.post-detail {
+  display block
+  margin 0 auto
+}
+
+.ick-animate--leftright {
+  left 100%
+}
+
+.ick-animate--rightleft {
+  left -100%
+}
+
+.ick-animate--point {
+  display block
+  transform scale(0)
+  transition all 1s ease-in-out
+}
+
+.ick-animate--drop {
+  display block
+  transform translateY(-100%)
+  transition: transform 0.5s
+  // top -200%
+}
+
+.posts  {
+  padding-right: 16px
+  .post:first-child {
+    margin-top: 0;
+  }
+
+  .post-title {
+    font-size: 1.5em;
+
+    .post-title-link {
+      color: #368CCB;
+      text-decoration: none;
+    }
+  }
+
+  .post-content {
+    position absolute
+    left 0
+    top 46px
+    right 0
+    bottom 38px
+    overflow hidden
+    line-height 1.5
+    a {
+      color: #368CCB;
+      text-decoration: none;
+    }
+  }
+
+  .post-meta {
+    color: #BABABA;
+  }
+}
+
+/** 文章列表样式 **/
+.ick-list__post {
+  display flex
+  align-items stretch
+  .article-left {
+    flex 0
+  }
+  .article-right {
+    position relative
+    flex 1
+    margin-left 15px
+    padding 15px 0
+    display flex
+    flex-direction column
+    justify-content space-between
+  }
+}

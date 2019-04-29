@@ -1,0 +1,60 @@
+<section class="posts">
+  <% page.posts.each(function (post,index) { %>
+  <%
+    // $('#ick-animate1').fadeTo('slow',1);
+    /**
+     * 返回随机数
+     * @param {Number} Min 最小值
+     * @param {Number} Max 最大值
+     */
+    function GetRandomNum(Min, Max) {
+      var Range = Max - Min;
+      var Rand = Math.random();
+      return (Min + Math.round(Rand * Range));
+    }
+
+    /**
+     * 返回随机的动画名称
+     */
+    var getRandomAnimate = function (pageIndex) {
+      var animateArr = ["fadein", "slidedown",'show','leftright','rightleft','point','drop','rotate360'];
+      // animateArr = ['rotate360'];
+      var index = GetRandomNum(0, animateArr.length - 1);
+      // return pageIndex==0? animateArr[index]:'';
+      return animateArr[index];
+    }
+
+    // var oldClassName = $('.ick-animate').attr('class')
+    // if (!oldClassName || oldClassName.indexOf('ick-animate--') <= -1) {
+    //   $('.ick-animate').attr('class', oldClassName + ' ick-animate--' + getRandomAnimate())
+    // }
+  %>
+  <article class="post post-list ick-list__post ick-animate--<%= getRandomAnimate(index) %> ">
+  <div class="article-left ick-flex__center">
+    <img src="/images/default.png" />
+  </div>
+  <div class="article-right">
+    <div class="post-title">
+      <a class="post-title-link" href="<%- url_for(post.path) %>">
+        <%= post.title %></a>
+    </div>
+    <div class="post-content">
+      <%- post.excerpt %>
+    </div>
+    <div class="post-meta">
+      <span class="post-time">
+        <%- date(post.date, "YYYY-MM-DD") %></span>
+    </div>
+  </div>
+  </article>
+  <% }) %>
+</section>
+
+
+
+<!-- 随机动画插件 -->
+<%- partial('_partial/randomAnimate') %>
+<!-- 分页插件 -->
+<%- partial('_partial/paginator') %>
+<!-- 底部插件 -->
+<%- partial('_partial/footer') %>
