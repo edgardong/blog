@@ -15,7 +15,9 @@
 
 <script>
   // 设置问章标题
-  document.title = '<%= page.title %>';
+  document.ready = function() {
+    document.title = '<%= page.title %>';
+  }
 </script>
 
 <% if(theme.gitment.enable) { %>
