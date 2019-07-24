@@ -2,7 +2,7 @@
 var _hmt = _hmt || [];
 (function() {
 var hm = document.createElement("script");
-hm.src = "https://hm.baidu.com/hm.js?1316d0e28593d0403cc5c34683bb79cb";
+hm.src = "https://hm.baidu.com/hm.js?41d21c9dcd286189956d28d9cc5075d6";
 var s = document.getElementsByTagName("script")[0];
 s.parentNode.insertBefore(hm, s);
 })();
