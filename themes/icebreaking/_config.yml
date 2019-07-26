@@ -10,29 +10,38 @@ description:  破冰网-破冰博客
 # 主题的菜单配置
 menu:
   Home: /
+  Test: /test
   Archives: /archives
-  DHBlog: http://blog.edgarhao.cn
+  DHBlog: https://blog.edgarhao.cn
   SiteMap: sitemap.xml
   test: {
     title:  '测试',
-    url:  'http://blog.edgarhao.cn',
+    url:  'https://blog.edgarhao.cn',
     name: '测试菜单',
     children: [
       {
         title:  '测试11',
-        url:  'http://blog.edgarhao.cn',
+        url:  'https://blog.edgarhao.cn',
         name: '测试菜单11'
       },
        {
         title:  '测试12',
-        url:  'http://blog.edgarhao.cn',
+        url:  'https://blog.edgarhao.cn',
         name: '测试菜单12'
+      },
+      {
+        title: '测试333',
+        url:  '/test/',
+        name: '哎哟',
+        type: 'inline'
       }
     ]
   }
 
 # 博客开始时间
 since: 2015-03-11
+
+page_defalut_image: [http://imgmini.dfshurufa.com/mobile/20160325172758_220bfff17cc1d8fa3fb6c8fae974bde9_2.jpeg, /images/default.png,https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503571860528&di=0fecd1d75a0d57851a782f0da053a047&imgtype=jpg&src=http%3A%2F%2Fimg0.imgtn.bdimg.com%2Fit%2Fu%3D3845209004%2C4113255300%26fm%3D214%26gp%3D0.jpg]
 
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/

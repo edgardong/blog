@@ -1,0 +1,19 @@
+<article class="post post-detail">
+  <div class="post-title">
+    这个是测试模版的东西12345
+    <h2 class="title">
+      <%= page.title %>
+      <%= JSON.stringify(theme) %>
+      <%= theme.page_defalut_image %>
+      <%= typeof theme.page_defalut_image %>
+      <%= theme.page_defalut_image[0] %>
+      <%= theme.page_defalut_image.length %>
+    </h2>
+
+    <% site.posts.each(function(post,index){  %>
+      <%- post.title %>
+      <br/>
+      <%- post.permalink %>
+    <% }) %>
+  </div>
+</article>

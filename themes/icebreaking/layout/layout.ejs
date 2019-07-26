@@ -7,7 +7,11 @@
     <%- partial('_partial/header') %>
     <div class="article-wrapper">
       <main class="main">
+      <% if(page.layout == 'test') {%>
         <%- body %>
+      <% }else{ %>
+        <%- body  %>
+      <% } %>
       </main>
       <div class="slider-right">
         <!-- 博客简介部分 -->
