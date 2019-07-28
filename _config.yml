@@ -84,7 +84,8 @@ theme: icebreaking
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/edgardong/blog.git
+  # repo: https://github.com/edgardong/edgardong.blog.git
+  repo: https://github.com/edgardong/edgardong.github.io.git
   branch: master
 
 jsonContent:
