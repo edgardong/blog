@@ -85,7 +85,7 @@ theme: icebreaking
 deploy:
   type: git
   # repo: https://github.com/edgardong/edgardong.blog.git
-  repo: https://github.com/edgardong/edgardong.github.io.git
+  repo: https://github.com/edgardong/edgardong.githcleub.io.git
   branch: master
 
 jsonContent:
